@@ -20,7 +20,7 @@ class ProductPage extends StatelessWidget {
                 onPressed: () => Get.toNamed('/product/2?name=Kaos Kaki&ukuran=Sedang'),
                 child: const Text('Product 2')),
             ElevatedButton(
-                onPressed: () => Get.toNamed('/product/3?name=Sepatu Lari&ukuan=47'),
+                onPressed: () => Get.toNamed('/product/3?name=Sepatu Lari&ukuran=47'),
                 child: const Text('Product 3')),
           ],
         ),

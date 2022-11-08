@@ -11,6 +11,11 @@ class DetailPage extends StatelessWidget {
         title: Text('Product ID ${Get.parameters['id']}'),
       ),
       body: Center(child: Text('Product Detail ${Get.parameters['name']}')),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Get.snackbar('HALO', 'Anda berhasil menampilkan snackbar');
+        },
+      ),
     );
   }
 }
