@@ -17,13 +17,20 @@ class ProductPage extends StatelessWidget {
                 onPressed: () => Get.toNamed('/product/1?name=Jaket&ukuran=XL'),
                 child: const Text('Product 1')),
             ElevatedButton(
-                onPressed: () => Get.toNamed('/product/2?name=Kaos Kaki&ukuran=Sedang'),
+                onPressed: () =>
+                    Get.toNamed('/product/2?name=Kaos Kaki&ukuran=Sedang'),
                 child: const Text('Product 2')),
             ElevatedButton(
-                onPressed: () => Get.toNamed('/product/3?name=Sepatu Lari&ukuran=47'),
+                onPressed: () =>
+                    Get.toNamed('/product/3?name=Sepatu Lari&ukuran=47'),
                 child: const Text('Product 3')),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Get.defaultDialog();
+        },
       ),
     );
   }
