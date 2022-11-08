@@ -8,23 +8,9 @@ class DetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('All Product'),
+        title: Text('Product ID ${Get.parameters['id']}'),
       ),
-      body: Center(
-        child: Column(
-          children: [
-            ElevatedButton(
-                onPressed: () => Get.toNamed('/product'),
-                child: const Text('Product 1')),
-            ElevatedButton(
-                onPressed: () => Get.toNamed('/product'),
-                child: const Text('Product 2')),
-            ElevatedButton(
-                onPressed: () => Get.toNamed('/product'),
-                child: const Text('Product 3')),
-          ],
-        ),
-      ),
+      body: Center(child: Text('Product Detail ${Get.parameters['name']}')),
     );
   }
 }
