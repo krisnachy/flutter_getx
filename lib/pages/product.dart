@@ -14,13 +14,13 @@ class ProductPage extends StatelessWidget {
         child: Column(
           children: [
             ElevatedButton(
-                onPressed: () => Get.toNamed('/product/1/Jaket'),
+                onPressed: () => Get.toNamed('/product/1?name=Jaket&ukuran=XL'),
                 child: const Text('Product 1')),
             ElevatedButton(
-                onPressed: () => Get.toNamed('/product/2/Kaos'),
+                onPressed: () => Get.toNamed('/product/2?name=Kaos Kaki&ukuran=Sedang'),
                 child: const Text('Product 2')),
             ElevatedButton(
-                onPressed: () => Get.toNamed('/product/3/Sepatu'),
+                onPressed: () => Get.toNamed('/product/3?name=Sepatu Lari&ukuan=47'),
                 child: const Text('Product 3')),
           ],
         ),
