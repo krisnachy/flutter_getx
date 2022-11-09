@@ -5,18 +5,20 @@ import 'package:flutter_getx/pages/product.dart';
 import 'package:get/get.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      home: HomePage(),
+      home: const HomePage(),
       getPages: [
-        GetPage(name: '/', page: () => HomePage()),
-        GetPage(name: '/product', page: () => ProductPage()),
-        GetPage(name: '/product/:id?', page: () => DetailPage()),
+        GetPage(name: '/', page: () => const HomePage()),
+        GetPage(name: '/product', page: () => const ProductPage()),
+        GetPage(name: '/product/:id?', page: () => const DetailPage()),
       ],
     );
   }
