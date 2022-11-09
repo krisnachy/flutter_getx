@@ -29,7 +29,11 @@ class ProductPage extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
+          //TODO choose one
           Get.defaultDialog();
+          Get.bottomSheet(
+              //TODO diisi dengan banyak widget seperti biasa
+              Container());
         },
       ),
     );
