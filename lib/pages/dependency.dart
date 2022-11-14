@@ -4,7 +4,8 @@ import 'package:get/get.dart';
 class DependencyPage extends StatelessWidget {
   DependencyPage({Key? key}) : super(key: key);
 
-  final myCon = Get.put(MyController());
+  final myCon = Get.put(MyController(), permanent: true);
+  //Permanent untuk menyimpan data yang ada seperti textfield atau fungsi yang menggunakan perhitungan
 
   /*
   Jika put diletakkan di main, maka tinggal menggunakan
