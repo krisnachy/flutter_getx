@@ -15,6 +15,9 @@ class DependencyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Dependency'),
+      ),
       body: Center(
           child: Obx(() => Text(
                 '${myCon.count}',
