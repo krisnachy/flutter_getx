@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx/pages/dependency.dart';
 import 'package:flutter_getx/pages/detail.dart';
 import 'package:flutter_getx/pages/home.dart';
 import 'package:flutter_getx/pages/product.dart';
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/', page: () => const HomePage()),
         GetPage(name: '/product', page: () => const ProductPage()),
         GetPage(name: '/product/:id?', page: () => const DetailPage()),
+        GetPage(name: '/depend', page: () => DependencyPage()),
       ],
     );
   }
