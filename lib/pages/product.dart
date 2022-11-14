@@ -24,6 +24,9 @@ class ProductPage extends StatelessWidget {
                 onPressed: () =>
                     Get.toNamed('/product/3?name=Sepatu Lari&ukuran=47'),
                 child: const Text('Product 3')),
+            ElevatedButton(
+                onPressed: () => Get.toNamed('/depend'),
+                child: const Text('Dependency')),
           ],
         ),
       ),
