@@ -35,5 +35,6 @@ class DependencyPage extends StatelessWidget {
 class MyController extends GetxController {
   var count = 0.obs;
 
+  //Untuk function bisa langsung menggunakan balikan
   void add() => count++;
 }
