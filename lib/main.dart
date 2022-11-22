@@ -3,6 +3,7 @@ import 'package:flutter_getx/pages/dependency.dart';
 import 'package:flutter_getx/pages/detail.dart';
 import 'package:flutter_getx/pages/home.dart';
 import 'package:flutter_getx/pages/product.dart';
+import 'package:flutter_getx/pages/putasync.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/product', page: () => const ProductPage()),
         GetPage(name: '/product/:id?', page: () => const DetailPage()),
         GetPage(name: '/depend', page: () => DependencyPage()),
+        GetPage(name: '/putasync', page: () => const PutAsync()),
       ],
     );
   }

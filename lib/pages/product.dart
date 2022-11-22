@@ -27,6 +27,9 @@ class ProductPage extends StatelessWidget {
             ElevatedButton(
                 onPressed: () => Get.toNamed('/depend'),
                 child: const Text('Dependency')),
+            ElevatedButton(
+                onPressed: () => Get.toNamed('/putasync'),
+                child: const Text('PutAsync')),
           ],
         ),
       ),
